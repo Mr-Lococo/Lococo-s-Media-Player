@@ -1,0 +1,25 @@
+
+.spotify-custom-shell {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+#spotify-custom-blur {
+  position: absolute !important;
+  inset: -20px !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  filter: blur(22px) brightness(0.7) !important;
+  transform: scale(1.02);
+  transition: background-image 250ms ease;
+}
+
+.spotify-custom-shell > :not(#spotify-custom-blur) {
+  position: relative;
+  z-index: 1;
+}

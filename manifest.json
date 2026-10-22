@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Lococo's Dynamic Mini Player",
+  "version": "0.5.2",
+  "description": "Automatically applies album art backgrounds and blur to Spotify's mini-player.",
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
